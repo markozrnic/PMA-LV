@@ -1,4 +1,4 @@
-package com.example.pma_lv1;
+package com.example.pma_lv1.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +12,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import com.example.pma_lv1.R;
+import com.example.pma_lv1.adapters.RecyclerViewAdapter;
 
 import java.util.Locale;
 
@@ -39,7 +42,7 @@ public class PocetniActivity extends AppCompatActivity implements AdapterView.On
         dodajStudenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PersonalInfoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CreateNewRecordActivity.class);
                 startActivity(intent);
             }
         });

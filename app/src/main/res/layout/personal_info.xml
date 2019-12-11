@@ -3,19 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PersonalInfoActivity">
+    android:layout_height="match_parent">
 
     <ImageView
+       
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp"
-        android:src="@drawable/ic_launcher_background"
         android:id="@+id/image"
-        />
+        android:scaleType="centerCrop" />
+
+
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutIme"
@@ -31,8 +34,7 @@
             android:id="@+id/textIme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/ime"
-        />
+            android:hint="@string/ime" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -76,7 +78,6 @@
         />
 
     <EditText
-
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/editDatum"
@@ -85,7 +86,8 @@
         app:layout_constraintTop_toBottomOf="@+id/line1"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
-        android:hint="@string/unesite_datum_rodenja"/>
+        android:hint="@string/unesite_datum_rodenja"
+        android:inputType="date"/>
 
     <View
         android:layout_width="match_parent"
@@ -105,4 +107,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

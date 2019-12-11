@@ -1,4 +1,4 @@
-package com.example.pma_lv1;
+package com.example.pma_lv1.models;
 
 public class Student {
     private String ime;

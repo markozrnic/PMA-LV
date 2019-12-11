@@ -1,9 +1,9 @@
-package com.example.pma_lv1;
+package com.example.pma_lv1.models;
+
 import java.util.ArrayList;
 
 import java.util.List;
 
-HO HO HOHOHHOHO RADI SADDSAD OBRO
 
 public class MyDataStorage {
     private List<Student> students;
@@ -14,7 +14,7 @@ public class MyDataStorage {
 
     static private MyDataStorage instance;
 
-    static MyDataStorage getInstance(){
+    public static MyDataStorage getInstance(){
         if(instance==null)
         {
             instance = new MyDataStorage();
